@@ -1,5 +1,5 @@
 - name: launching complete apache website
-  hosts: all
+  hosts: 54.91.229.184 ansible_ssh_user=ubuntu
   become: true  
   tasks:
           - name: installing apache software
@@ -8,7 +8,7 @@
                     state: present
           - name: copy index.html 
             copy:
-                    src: /home/labsuser/project/index.html
+                    src: index.html
                     dest: /var/www/html/
           - name: start the apche2 service
             service:
