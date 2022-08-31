@@ -1,5 +1,5 @@
 - name: launching complete apache website
-  hosts: all
+  hosts: 54.91.229.184
   become: true  
   tasks:
           - name: installing apache software
