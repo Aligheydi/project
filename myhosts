@@ -1,2 +1,2 @@
 [aws]
-52.207.228.191
+52.207.228.191 ansible_ssh_user=ubuntu
